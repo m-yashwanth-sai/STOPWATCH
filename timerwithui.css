@@ -1,0 +1,79 @@
+
+
+body{
+    margin: 0px;
+    background-color: beige;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+    
+}
+
+button{
+    color: white;
+     background-color: black; 
+    border: 10px solid cornsilk;
+    height: 50px;
+    width: 100px;
+} 
+
+#timer{
+   padding-left: 80px;
+}
+
+.start-btn{
+    background-color: rgb(31, 149, 31);
+}
+
+.stop-btn{
+    background-color: rgb(248, 50, 50);
+}
+
+.reset-btn{
+    background-color: rgb(89, 102, 216);
+}
+
+.stopwatch{
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    display: inline-block;
+    height: auto;
+    width: 500px;
+    justify-content: center;
+    border: 5px ridge black;
+}
+
+.buttonbox{
+    padding-left: 95px;
+}
+
+@media (max-width:550px){
+
+    .stopwatch{
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    #timer{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .buttonbox{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    button{
+        width: 80px;
+        height: 45px;
+        font-size: 14px;
+        border-width: 5px;
+    }
+
+}
